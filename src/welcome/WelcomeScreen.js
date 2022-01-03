@@ -1,6 +1,6 @@
-import { Col, Row } from "react-bootstrap";
-import WelcomeIcon from "./WelcomeIcon";
-import { Link } from "react-router-dom";
+import { Col, Row } from 'react-bootstrap';
+import WelcomeIcon from './WelcomeIcon';
+import { Link } from 'react-router-dom';
 
 export default function WelcomeScreen() {
   return (

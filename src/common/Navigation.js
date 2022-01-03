@@ -1,6 +1,6 @@
-import { Container, Image, Navbar } from "react-bootstrap";
-import { LinkContainer } from "react-router-bootstrap";
-import icon from "./cinema.svg";
+import { Container, Image, Navbar } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
+import icon from './cinema.svg';
 
 export default function Navigation() {
   return (

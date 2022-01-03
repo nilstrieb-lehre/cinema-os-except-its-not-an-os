@@ -1,8 +1,8 @@
-import { render, screen } from "@testing-library/react";
-import WelcomeScreen from "./WelcomeScreen";
-import { BrowserRouter } from "react-router-dom";
+import { render, screen } from '@testing-library/react';
+import WelcomeScreen from './WelcomeScreen';
+import { BrowserRouter } from 'react-router-dom';
 
-test("find some text", () => {
+test('find some text', () => {
   render(
     <BrowserRouter>
       <WelcomeScreen />

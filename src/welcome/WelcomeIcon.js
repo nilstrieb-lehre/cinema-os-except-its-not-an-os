@@ -1,4 +1,4 @@
-import { Figure, Image } from "react-bootstrap";
+import { Figure, Image } from 'react-bootstrap';
 
 export default function WelcomeIcon({ src, text }) {
   return (
