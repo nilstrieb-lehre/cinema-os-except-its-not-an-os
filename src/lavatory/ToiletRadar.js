@@ -1,3 +1,3 @@
 export default function ToiletRadar() {
-  return (<p>hurry...</p>);
+  return <p>hurry...</p>;
 }
