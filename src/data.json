@@ -1,0 +1,22 @@
+{
+  "snacks": {
+    "popcorn": {
+      "name": "Popcorn",
+      "description": "popcorn",
+      "price": "1000",
+      "image": "https://wholefully.com/wp-content/uploads/2017/06/movie-theatre-popcorn-800x1200-720x540.jpg"
+    },
+    "cola": {
+      "name": "Cola",
+      "description": "cola trinken",
+      "price": "345",
+      "image": "https://www.justdrink.ch/cmsstatic/product/15107/21113_(klein)_Coca-Cola_45cl-1.png"
+    },
+    "ferris": {
+      "name": "Ferris",
+      "description": "ferris the crab",
+      "price": "9999999999",
+      "image": "https://rustacean.net/assets/cuddlyferris.svg"
+    }
+  }
+}

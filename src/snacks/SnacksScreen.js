@@ -1,22 +1,21 @@
 import { Card, Col, Row } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
+import data from '../data.json';
+import { formatCurrency } from '../helper';
 
 export default function SnacksScreen() {
-  const menu = ['cola', 'chips', 'popcorn', 'ferris'];
-
   return (
     <p>
       <Row>
-        {menu.map((name) => (
-          <Col>
-            <Card onClick={() => console.log('snacked')}>
-              <Card.Img
-                src="https://raw.githubusercontent.com/Geal/nom/master/assets/nom.png"
-                alt="a cute monster eating something, from the Rust crate nom"
-                width="200"
-              />
-              <Card.Title>{name}</Card.Title>
-              <Card.Footer>{Math.ceil(Math.random() * 5)}.-</Card.Footer>
-            </Card>
+        {Object.entries(data.snacks).map(([code, snack]) => (
+          <Col key={code}>
+            <NavLink className="text-decoration-none" to={`/snacks/${code}`}>
+              <Card>
+                <Card.Img src={snack.image} alt={`An image of ${snack.name}`} />
+                <Card.Title>{snack.name}</Card.Title>
+                <Card.Footer>{formatCurrency(snack.price)}</Card.Footer>
+              </Card>
+            </NavLink>
           </Col>
         ))}
       </Row>
